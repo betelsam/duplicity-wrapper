@@ -1,0 +1,7 @@
+[Unit]
+Description=Duplicity Backup
+Requires=systemd-networkd.service
+
+[Service]
+Type=oneshot
+ExecStart=/opt/backup-duplicity/backup-duplicity.sh
